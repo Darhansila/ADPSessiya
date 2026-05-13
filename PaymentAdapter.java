@@ -34,7 +34,7 @@ class PaymentAdapter implements PaymentModule{
     public static void main(String[] args){
         //test 
         OldPaymentModule oldPaymentModule = new OldPaymentModule();
-        PaymentModule paymentModule = new PaymentAdapter(oldPaymentModule);
+        PaymentModule paymentModule = new PaymentAdapter(oldPaymentModule); //  передаем обьект в качестве аргумента. 
         paymentModule.oldPaymentMethod();
     }
  }
